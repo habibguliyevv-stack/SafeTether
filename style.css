@@ -1,0 +1,61 @@
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    color: #1e3a8a;
+    font-size: 48px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status-card {
+    background-color: white;
+    width: 350px;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.status-card h2 {
+    color: #1e3a8a;
+    margin-top: 0;
+}
+
+.status-card p {
+    color: #777;
+}
+
+.connection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.distance {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin: 20px 0;
+}

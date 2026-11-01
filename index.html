@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SafeTether</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div id="login-section">
+        <h1>SafeTether</h1>
+        <h2>Login</h2>
+
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+
+        <button id="login-btn">Login</button>
+
+        <p id="login-message"></p>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+        <h1>SafeTether</h1>
+        <p>Accessibility-First Anti-Theft Tracker</p>
+
+        <div class="status-card">
+            <h2>Device Status</h2>
+            <p class="device-name">Tracked Device: T0</p>
+            <p class="distance">Distance: -- cm</p>
+            <p class="limit">Safety Limit: 100 cm</p>
+        <div id="alert-section" style="display: none;">
+            <h2 id="alert-title">T0 Has Moved Away!</h2>
+            <p id="alert-question">Did You Notice This Separation?</p>
+
+            <button id="aware-btn">Yes, I’m Aware</button>
+            <button id="unaware-btn">No, I’m Not Aware</button>
+
+            <p id="result-message" style="display: none; color: red;">
+                Suspicious Separation Detected!
+                The incident has been successfully logged.
+            </p>
+        </div>
+        <div class="connection">
+            <span class="status-dot" id="status-dot"></span>
+            <p id="connection-text">A0 Connected</p>
+        </div>
+        </div>
+
+        <button id="logout-btn">Logout</button>
+    </div>
+
+</div>
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
